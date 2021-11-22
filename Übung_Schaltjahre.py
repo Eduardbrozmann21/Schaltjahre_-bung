@@ -12,15 +12,16 @@ else:
 
 #Erstellen Sie eine Liste mit allen Schaltjahren von 1800 bis 2100. Geben Sie die Liste anschließend aus.
 
+Schaltjahre = []
 
 for i in range(1800,2101):
     if (i % 4 == 0 ) and (i % 100 != 0) or (i % 400 == 0):
-        print(i,"ist ein schaltjahr")
+        Schaltjahre += [i]
+print("das sind die schaltjahre",Schaltjahre)
         
-else:
-       print(i,"ist kein schaltjahr")
+
           
-    #10
+    
 
     
      
